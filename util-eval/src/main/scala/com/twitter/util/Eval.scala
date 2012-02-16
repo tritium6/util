@@ -77,7 +77,7 @@ class Eval(target: Option[File]) {
     jarPathOfClass("scala.tools.nsc.Interpreter")
   } catch {
     case e =>
-      throw new RuntimeException("Unable lo load scala interpreter from classpath (scala-compiler jar is missing?)", e)
+      throw new RuntimeException("Unable to load scala interpreter from classpath (scala-compiler jar is missing?)", e)
   }
 
   private lazy val libPath = try {
